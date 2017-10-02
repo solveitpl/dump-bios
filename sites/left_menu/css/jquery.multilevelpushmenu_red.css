@@ -1,0 +1,391 @@
+
+.cd-main-content {
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.cd-main-content #menu {
+    width: 250px;
+}
+
+.cd-main-content #menu nav {
+    position: fixed;
+    overflow-y: hidden;
+    min-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 250px;
+
+}
+
+.cd-main-content #menu nav .levelHolderClass {
+    min-height: 100%;
+    background: #111111;
+
+}
+
+.cd-main-content #menu nav .levelHolderClass ul .levelHolderClass ul {
+    width: 263px;
+    background: #111111;
+    position: absolute;
+    overflow-y: auto;
+    height: 100%;
+    top: 56px;
+    right: -13px;
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li:hover > a {
+    color: #6fd8d4;
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li:hover path {
+    fill: #6fd8d4;
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li {
+    align-items: center;
+    background: #111111;
+    padding-left: 5px;
+
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li h2 {
+    font-family: PixelMix;
+    background: #111111;
+    text-transform: uppercase;
+    color: #6fd8d4;
+    padding: .4em .4em .4em .4em;
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li:hover > a > i {
+    color: #6fd8d4;
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li:hover a:after {
+    color: gray;
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li .have-childs:after {
+    content: ">";
+    display: inline-block;
+    color: #c9c9c9;
+    font-family: PixelMix;
+    position: absolute;
+    right: 10px;
+    background: #111111;
+}
+
+.add_new_btn {
+
+    bottom: 30px;
+    position: fixed;
+    left: 20px;
+    color: #c9c9c9;
+    background: #1e1e1e;
+    height: 30px;
+    width: 200px !important;
+    font-family: 'PixelMix';
+    border: 1px solid #7a777f;
+    font-size: 13px;
+    z-index: 1;
+    text-transform: uppercase;
+    padding: .5em .4em .4em 1.5em;
+    display: none;
+
+}
+
+.add_new_btn span {
+    color: #6fd8d4;
+    float: right;
+    margin-right: 10px;
+}
+
+.add_new_btn:hover {
+    color: #6fd8d4;
+
+}
+
+.levelHolderClass[data-level="6"] > .filter_input {
+    display: none;
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li a {
+    display: flex;
+    align-items: center;
+    outline: none;
+    overflow: hidden;
+    text-decoration: none;
+    color: #c9c9c9;
+    text-transform: uppercase;
+    width: 100%;
+    padding: .4em .4em .4em .4em;
+
+}
+
+.cd-main-content #menu nav .levelHolderClass ul li a .material-icons {
+    width: 40px;
+    color: #474747;
+
+}
+
+.cd-main-content #menu nav .levelHolderClass .FilterInputClass {
+    position: relative;
+    top: -31px;
+    width: 250px;
+    height: 28px;
+}
+
+.cd-main-content #menu nav .levelHolderClass .FilterInputClass input {
+    height: 28px;
+    font-size: 12px;
+    padding-left: 10px;
+}
+
+.cd-main-content #menu nav .levelHolderClass .ltr {
+    background-color: #111111;
+}
+
+/* Normal icons */
+
+.one {
+    font-family: PixelMix;
+    background: #111111;
+    height: 80px;
+}
+
+path {
+    fill: #474747;
+}
+
+.one svg {
+    margin-right: 10px;
+}
+
+.cd-main-content #menu nav .levelHolderClass .sorting:hover::after {
+    color: #6fd8d4;
+}
+
+.one i:first-child {
+    margin-right: 65px;
+}
+
+.two {
+    font-family: PixelMix;
+    background: #111111;
+    height: 80px;
+}
+
+.two svg {
+    margin-right: 10px;
+}
+
+.two i:first-child {
+    margin-right: 65px;
+}
+
+.three {
+    font-family: PixelMix;
+    background: #111111;
+    height: 80px;
+}
+
+.three svg {
+    margin-right: 10px;
+}
+
+.three i:first-child {
+    margin-right: 65px;
+}
+
+.four {
+    font-family: PixelMix;
+    background: #111111;
+    height: 80px;
+}
+
+.four svg {
+    margin-right: 10px;
+}
+
+.four i:first-child {
+    margin-right: 30px;
+}
+
+.five {
+    font-family: PixelMix;
+    background: #111111;
+    height: 80px;
+}
+
+.five svg {
+    margin-right: -30px;
+}
+
+.five i:first-child {
+    margin-right: 30px;
+}
+
+.cd-main-content .content {
+    flex-grow: 1;
+    padding-top: 60px;
+}
+
+.cd-main-content .content .cd-breadcrumps {
+    background: #f8f8f8;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #cacaca;
+}
+
+.cd-main-content .content .cd-breadcrumps .breadcrumb {
+    display: flex;
+    padding: 10px;
+    padding-right: 0;
+    padding-left: 11px;
+
+}
+
+.cd-main-content .content .cd-breadcrumps .breadcrumb ul {
+
+}
+
+.cd-main-content .content .cd-breadcrumps .breadcrumb li {
+
+    color: #6fd8d4;
+    text-transform: uppercase;
+    font-family: PixelMix;
+}
+
+.cd-main-content .content .cd-breadcrumps .breadcrumb li:nth-child(4) {
+
+}
+
+.cd-main-content .content .cd-breadcrumps .breadcrumb li a {
+    color: #474747;
+}
+
+.cd-main-content .content .cd-breadcrumps .breadcrumb li a:after {
+    content: "/";
+    color: #474747;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.cd-main-content .content .cd-breadcrumps .breadcrumb li a:hover {
+    color: #6fd8d4;
+}
+
+.cd-main-content .content .content-wrapper h1 {
+    text-align: center;
+    padding: 3em 0;
+    font-size: 2rem;
+}
+
+.cd-main-content .content::before {
+    /* never visible - used to check MQ in jQuery */
+    display: none;
+    content: 'mobile';
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-main-content .content .content-wrapper h1 {
+        padding: 4em 0;
+        font-size: 3.2rem;
+        font-weight: 300;
+    }
+
+    .cd-main-content .content::before {
+        content: 'tablet';
+    }
+}
+
+@media only screen and (min-width: 1170px) {
+    .cd-main-content .content::before {
+        content: 'desktop';
+    }
+}
+
+.multilevelpushmenu_wrapper .levelHolderClass {
+    position: absolute;
+    overflow: hidden;
+    top: 60px;
+
+    width: auto;
+    min-height: 100%;
+}
+
+.multilevelpushmenu_wrapper .ltr {
+    margin-left: -100%;
+    left: 0;
+
+}
+
+.multilevelpushmenu_wrapper .rtl {
+    margin-right: -100%;
+    right: 0;
+}
+
+.multilevelpushmenu_wrapper ul {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+}
+
+.multilevelpushmenu_wrapper li {
+    cursor: pointer;
+    display: flex;
+}
+
+.multilevelpushmenu_wrapper .backItemClass {
+    display: block;
+    position: relative;
+    top: -28px;
+}
+
+.multilevelpushmenu_wrapper .backItemClass a:before {
+    content: "<";
+    display: block;
+    font-family: PixelMix;
+    padding-right: 10px;
+}
+
+.multilevelpushmenu_wrapper .backItemClass a:before {
+    content: "<";
+    display: block;
+    font-family: PixelMix;
+    padding-right: 10px;
+}
+
+.searchs {
+    position: fixed;
+    bottom: 0;
+    font-family: PixelMix;
+    background: #1e1e1e;
+    border: none;
+    width: 250px;
+    height: 30px;
+    border: 1px solid white;
+    color: white
+}
+
+.menu_multilevelpushmenu div {
+
+}
+
+.multilevelpushmenu_wrapper .levelHolderClass {
+    position: fixed;
+}
+
+.cd-main-content .content {
+
+    padding-top: 40px;
+}
+
+.hidden-cat-tree {
+    display: none;
+}

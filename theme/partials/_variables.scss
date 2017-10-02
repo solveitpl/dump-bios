@@ -1,0 +1,83 @@
+// colors
+
+$color-1: #1e1e1e; // Mako
+$color-2: #1784c7; // Denim
+$color-3: #ffffff; // White
+$color-4: #474747;
+$color-5: #333333;
+$color-6: #6fd8d4;
+$color-7: #c9c9c9;
+$color-8: #f8f8f8;
+$color-info: #c4d03e;
+$color-img: #3fd43b;
+$color-bios: #3bc7d4;
+$color-oth: #fff600;
+$color-sol: #d4993b;
+$color-sol: #d4993b;
+$color-boa: #d45b3b;
+$color-sch: #bd3bd4;
+$color-tot: #8f63ff;
+$color-kbc: #a3a3a3;
+$color-soft: #a89779;
+
+// fonts 
+
+$primary-font: Open Sans;
+
+@font-face {
+    font-family: PixelMix;
+    src: url(../fonts/pixelmix.ttf);
+}
+$pixel-font: PixelMix;
+$logo-font-size: 24px;
+// header size
+
+$header-height-S: 45px;
+$header-height-M: 60px;
+
+//sidebar size
+
+$sidebar-width-M: 110px;
+$sidebar-width-L: 250px;
+
+$sidebar2-width-M: 110px;
+$sidebar2-width-L: 460px;
+
+$button-height-M: 30px;
+
+.cd-logo {
+    p:after {
+        -webkit-animation-name: blink;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-timing-function: linear;
+        -webkit-animation-iteration-count: infinite;
+
+        -moz-animation-name: blink;
+        -moz-animation-duration: 1s;
+        -moz-animation-timing-function: linear;
+        -moz-animation-iteration-count: infinite;
+
+        animation-name: blink;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @-moz-keyframes blink {  
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+    }
+
+    @-webkit-keyframes blink {  
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+    }
+
+    @keyframes blink {  
+        0% { opacity: 1.0; }
+        50% { opacity: 0.0; }
+        100% { opacity: 1.0; }
+    }
+}

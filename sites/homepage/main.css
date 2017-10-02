@@ -1,0 +1,244 @@
+@CHARSET "UTF-8";
+
+.contents {
+	position: absolute;
+	width: 100%;
+	height: 95%;
+}
+
+.main_image{
+	text-align: center;
+	position: relative;
+	top: 20px;
+	background-image: url('images/main_background.jpg');
+	height: 150px;
+	width: 80%;
+	left: 10%;
+}
+
+.quick_menus{
+	position: absolute;
+	margin-top: 2%;
+	height: 85%;
+	width: 100%;
+}
+
+.quick_block {
+	width: 25%;
+	background-color: #DDD;
+	height: 80%;
+
+	margin-left: 6%;
+	float: left;
+}
+
+.quick_block .quick_content_header{
+	color: white;
+	min-height: 20px;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	overflow:auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	letter-spacing: 1px;
+	background: #1b4d0f; 
+    background: -webkit-linear-gradient(#1b4d0f, #5bAd6f); 
+    background: -o-linear-gradient(#1b4d0f, #5bAd6f);
+    background: -moz-linear-gradient(#1b4d0f, #5bAd6f);
+    background: linear-gradient(#1b4d0f, #5bAd6f);
+	
+}
+
+
+.scroll_down{
+	width: 100%;
+	height: 20px;	
+	position: relative;
+	background-color: #999;
+	padding: 10px 0px 10px 0px;
+	text-align: center;
+	background: #1b4d0f;
+    background: -webkit-linear-gradient(#CCCC,#999, #CCC); 
+    background: -o-linear-gradient(#CCCC,#999, #CCC); 
+    background: -moz-linear-gradient(#CCCC,#999, #CCC); 
+    background: linear-gradient(#999,#CCC, #999); 
+    color: #FFF;
+    font-weight: bold;
+	cursor: pointer;
+	transition-duration: 200ms;
+}
+
+.scroll_down img{
+	width:60px;
+	transition-duration: 150ms;
+}
+
+.scroll_down:hover > img{
+	width:65px;
+}
+
+* {margin: 0; padding: 0;}
+
+.quick_content {
+	overflow: hidden;	
+	height:85%;
+}
+
+.quick_content ul {
+  list-style-type: none;
+  width: 95%;
+  padding-left: 5px;
+}
+
+.quick_content a{
+	color: black;
+	text-decoration: none;
+}
+
+h3 {
+  font: bold 14px/1.5 Helvetica, Verdana, sans-serif;
+}
+
+.quick_content li img {
+  float: left;
+  margin: 0 10px 0px 0px;
+  height: 40px;
+  vertical-align: middle;
+}
+
+.quick_content li p {
+ 	font-size: 12px;
+ 	text-align: justify;
+ 	margin-right: 10px;
+}
+
+.quick_content li {
+  padding: 10px;
+  overflow: auto;
+}
+
+.quick_content li:hover {
+  background: #eee;
+  cursor: pointer;
+}
+
+.file_votes{
+	float: left;
+	width:10%;
+	height: 80%;
+	top:10%;
+
+}
+
+.vote {
+	width: 0px;
+	text-align: center;
+	
+}
+
+.vote img {
+	height: 20px !important;
+	margin-right: 0px !important;
+	vertical-align: middle;
+	margin-bottom: 5px !important;
+	
+}
+
+.vote span {
+	
+	margin-bottom: 0px;
+
+}
+
+
+.file_info{
+	width:50%;
+	float: left;
+}
+
+.HomePageAD{
+	top:20px;
+    height: 500px;
+    position: absolute;
+    right: -20px;
+    width: 100px;
+}
+.content .content-wrapper {
+	height: 90%;
+}
+.content .content-wrapper .adver-container {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 97%;
+}
+.content .content-wrapper .adver-container > div {
+	min-height: 135px;
+	width: 80%;
+	height: 20%;
+	margin: 20px auto;
+	border: 1px solid #cacaca;
+	display: flex;
+	padding: 9px;
+	background-color: white;
+	cursor: pointer;
+}
+.content .content-wrapper .adver-container > div:hover {
+	background-color: #f7f7f7;
+
+}
+.content .content-wrapper .adver-container div img:nth-child(1){
+	width: 300px;
+	height: 100%;
+	margin-left: auto;
+
+}
+.content .content-wrapper .adver-container div div:nth-child(2){
+	padding-top: 10px;
+	width: 300px;
+	height: 100%;
+	padding-left: 9px;
+	margin-right: auto;
+}
+.adver-container div div:nth-child(2) h3{
+	font-family: 'PixelMix', Sans-Serif;
+	font-size: 15px;
+	font-weight: lighter;
+	height: 17px;
+}
+.adver-container div div:nth-child(2) p{
+	padding-top: 12px;
+	color: gray;
+	font-size: 14px;
+}
+@media screen and (max-width: 1450px){
+	.content .content-wrapper .adver-container div div p {
+		font-size: 11px;
+	}
+	.content .content-wrapper .adver-container div div:nth-child(2) h3 {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 1350px) {
+	.content .content-wrapper .adver-container div div p {
+		font-size: 9px;
+	}
+	.content .content-wrapper .adver-container div div:nth-child(2) h3 {
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.content .content-wrapper .adver-container div img:nth-child(1){
+		width: 200px;
+
+	}
+}
+
+@media screen and (min-width: 1950px) {
+	.content .content-wrapper .adver-container div img:nth-child(1){
+		width: 400px;
+
+	}
+}

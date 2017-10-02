@@ -1,0 +1,417 @@
+@CHARSET "UTF-8";
+
+.AdsToolbar {
+	height: 40px;
+	position: relative;
+	width:100%;
+	background-color: #CCC;
+	text-align: left;
+
+}
+
+.AdsToolbar form{
+	float: left;
+}
+
+.AdsToolbar img {
+	height: 30px;
+	top:5px;
+	position: relative;
+	margin-left: 15px;
+	transition-duration: 200ms;
+	cursor: pointer;
+	}
+
+.AdsToolbar img:hover{
+	top :2.5px;
+}
+
+.HeaderTitle{
+	font-size: 27px;
+	position: relative;
+	font-weight: bold;
+	float: right;
+  	margin-right: 35px;
+	text-transform: uppercase;
+	top: 3px;
+}
+
+
+.ads_list{
+	position: absolute;
+	width: 100%;
+}
+
+.ads_list input{
+	font-size: 14px;
+	width:auto;
+	
+}
+.ads_list strong {
+	font-weight: bold; 
+}
+
+.ads_list em {
+	font-style: italic; 
+}
+
+.ads_list  table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 14px;
+	line-height: 7px;
+	margin: 30px auto;
+	text-align: left;
+	width: 95%;
+}	
+
+.ads_list th {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png), linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+	line-height: 10px;
+}
+
+.short {
+	width: 80px;
+}
+
+.ads_list th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+.ads_list th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+	width: 100px;
+}
+
+.ads_list th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+.ads_list td {
+	text-align: center;
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 2px 5px;
+	position: relative;
+	transition: all 300ms;
+}
+
+.ads_list td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+.ads_list td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+.ads_list tr {
+	background: url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+	cursor: pointer;
+}
+
+.ads_list tr:nth-child(odd) td {
+	background: #f1f1f1 url(http://jackrugile.com/images/misc/noise-diagonal.png);	
+}
+
+.ads_list tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+.ads_list tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+.ads_list tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+.ads_list tbody:hover td {
+	color: transparent;
+	text-shadow: 0.5px 0.5px 0.5px #777;
+}
+
+.ads_list tbody:hover tr:hover td {
+	color: #444;
+	background: #fff;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.smooth th{
+	padding:2px;
+	cursor: default;
+}
+
+
+.ads_list .ad_img {
+	max-width: 200px;
+	max-height: 100px;
+}
+
+
+.loading_img{
+	display: none;
+}
+
+.UploadToolbar {
+	height: 40px;
+	position: relative;
+	width:100%;
+	background-color: #CCC;
+	text-align: left;
+
+}
+
+
+
+.UploadToolbar form{
+	float: left;
+
+	
+}
+
+.UploadToolbar img {
+	height: 30px;
+	top:5px;
+	position: relative;
+	margin-left: 15px;
+	transition-duration: 200ms;
+	cursor: pointer;
+	}
+
+.UploadToolbar img:hover{
+	top :2.5px;
+}	
+
+.upload_drop_zone{
+	width: 80%;
+	left:10%;
+	top: 30px;
+	position: relative;
+	padding-bottom: 35px;
+	overflow: auto;
+	
+}
+.info_container{
+	float:left;
+}
+.file_list_container {
+	position: relative;
+	top: 0px;
+	width: 100% !important;
+	min-height: 450px;
+	border: 1px dashed black;
+	margin-right: 10px;
+	z-index: 300px;
+	cursor: pointer;
+	text-align: center;
+}
+
+#drop_title {
+	color: #000;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    top: 30%;
+    left:10%;
+    opacity: 0;
+    transition-duration:400ms;
+    background-color: white;
+}
+
+.file_list_container.dz-drag-hover {
+    border-style: solid; 
+}
+    
+.file_list_container.dz-drag-hover .dz-message {
+	opacity: 1 !important; 
+}
+
+
+#drop_title span{
+    width: 100%;
+    font-size:14px;
+    z-index: 0;
+}
+
+
+.after_drop {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.after_drop div {
+	float: left;
+	width: 48%;
+	
+}
+
+.after_drop input{
+	padding: 4px;
+	width: 26px;
+	}
+	
+.after_drop input[type=submit]{
+	width: 80px;
+	margin-top: 10px;
+	background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+
+
+.after_drop input[type=button]{
+	width: 80px;
+	margin-top: 10px;
+	background-color: black;
+    border: 1px solid white;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+   
+}
+
+
+.after_drop input[type=text]{
+	width: 70%;
+	font-size: 14px;
+	font-weight: bold;
+	
+}
+
+.info_form {
+	background-color: #DDD;
+	margin-top: 10px;
+	width: 100% !important;
+	text-align: center;
+	border: 1px solid #AAA;
+	margin-left: 12px;
+	padding-bottom: 5px;
+	border-radius: 2px;
+}
+
+.info_form div {
+	width: 100%;
+}
+
+.div_prg {
+	width: 80% !important;
+	left:10%;
+	position: relative;
+	text-align: center;
+	}
+
+.info_form .title{
+	left: 9px;
+    position: relative;
+    top: -9px;
+    background-color: #DDD;
+    width: auto !important;
+	padding: 0px 8px 0px 8px;
+	border-radius: 5px;
+	border-top: 1px solid #AAA;
+}
+
+
+
+.fileinfo {
+	float: none !important;
+	width: 45% !important;
+	margin-top: 20px;
+	
+}
+
+.fileinfo .i_title{
+	margin-left: 20px;
+	border-bottom: 1px solid #aaa;
+	text-align: left;
+	font-size: 14px;
+}
+
+.fileinfo .i_value{
+	text-align: right;
+	margin-right: 20px;
+	font-size: 12px;
+}
+
+.no_content{
+	font-size: 16px;
+	font-weight: bold;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+#upload_image{
+	max-width: 100%;
+	max-height: 500px;
+	margin-top: 50px;
+}
+
+.hide{
+	display: none;
+}
+
+[_selVisible]{
+	padding: 5px 0px;
+}
+
+[_selVisible] input[type=text] {
+	font-size: 14px;
+	font-weight: bold;
+	text-align: right;
+    width: 140px !important;
+}
+
+.radio_div{
+	float: none !important;
+    left: 30%;
+    position: relative;
+    text-align: center;
+    width: 40% !important;
+}
+
+.comment_box{
+	position: relative;
+	top:50px;
+}
+
+.ok_icon_small{
+	width:20px;
+	vertical-align: middle;
+}
+
+.expired_icon{
+	width: 35px;
+	vertical-align: middle;
+}

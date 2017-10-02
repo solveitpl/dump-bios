@@ -1,0 +1,38 @@
+szerokość okna:556px
+wysokość okna:700px
+
+wysokość nagłówka 56px;
+szerokość nagłówka:okna
+
+szerokość logo :265px
+wysokość logo:nagłówka
+padding left nagłówka : 34px
+
+wysokość komunikatu:110px
+padding-top komunikatu:20px;
+height:14px
+font:Pixelmix
+
+
+ramka margin top:25px;
+      margin left:25px;
+      
+
+text-wiadomości
+      margin-top:35px
+      padding bottom:8px
+      
+      
+hr
+  margin-top:75
+  margin bottom :17
+  
+podpis
+margin-left:362;
+margin-bottom:190;
+
+hr
+    padding bottom 15px
+    width-450;
+    color ze strony
+

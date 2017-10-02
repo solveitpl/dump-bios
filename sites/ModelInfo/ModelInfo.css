@@ -1,0 +1,105 @@
+@CHARSET "UTF-8";
+
+.ModelInfoBlock{
+	float: left;
+	width: 25%;
+	min-height: 70px;
+	padding-left: 10px;
+	padding-top: 5px;
+	background-color: #f3f3f3;
+	margin-left:10px;
+	margin-top:5px;
+	border-radius: 10px;
+}
+
+.ModelInfoBlock .PropTitle{
+	border-bottom: 1px dotted black;
+	font-size: 10px;
+
+}
+
+.ModelInfoBlock .PropVal{
+	font-size: 24px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	text-align: right;
+	margin-top: 5px;
+	margin-right: 5px;
+	
+}
+
+.EditInfo input[type=text]{
+	text-align: right;
+	font-size: 16px;
+}
+
+select{
+	font-size: 16px;
+	font-size: bold;	
+}
+
+
+.page_breaker{
+	width: 100%;
+}
+
+.info_topbar{
+	min-height: 40px;
+	width:100;
+	padding: 2px;
+	background-color: #CCC;
+	margin-bottom: 10px;
+}
+
+
+
+.DIVISION_NAME{
+	float: right;
+    font-weight: bold;
+    margin-right: 35px;
+    text-transform: uppercase;
+	font-size: 27px;
+}
+
+.toolbar_btn{
+	top:2px;
+	left:0px;
+	float: left;
+	position: relative;
+	margin-left:20px;
+}
+
+.toolbar_btn img{
+	width: 40px;
+	cursor:pointer;
+	transition-duration: 200ms;
+}
+
+.toolbar_btn img:hover{
+	width: 42px;
+	top: 0px;
+	cursor:pointer;
+}
+
+.RevisionsBlock{
+
+	display:none;
+	position: absolute;
+}
+
+.MsgHeader{
+	font-size: 16px;
+	border-bottom: 1px solid black;
+	margin-left: 20px;
+	width: 100%;
+	position: absolute;
+	float: none;
+}
+
+.Msgsubtitle{
+	position: absolute;
+	float:none;
+	margin-top: 25px;
+	margin-left:30px;
+	font-size:10px;
+}

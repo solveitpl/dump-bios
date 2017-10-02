@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+
+.donate_section {
+	float: left;
+    margin-left: 20px;
+    padding-bottom: 10px;	
+    margin-top: 5px;
+}
+
+.donate_section:FIRST-CHILD {
+
+}
+
+.section_header
+{
+	width:100%;
+	position: relative;
+}
+
+.donate_form_title{
+	position: relative;
+	width: 100%;
+	font-weight: bold;
+}
+
+.donate_form_title > span
+{
+	color: red;
+}
+
+
+.donate_form_hint{
+	font-style: italic;
+	font-size: 12px;
+}
+
+.agreements_section{
+	float: right;
+	width: 100%;
+	font-size:10px;
+}

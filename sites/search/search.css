@@ -1,0 +1,159 @@
+@CHARSET "UTF-8";
+
+.content {
+	background-color: white;
+}
+
+.search_input{
+	position: relative;
+	top: 5px;
+	width:70%;
+	left: 40px;
+	
+}
+.search-bar {
+	height: 60px;
+	background-color: #f8f8f8;
+	border-bottom: 1px solid #cacaca;
+	padding-top: 12px;
+}
+
+.search_input .title{
+	font-size: 16px;
+}
+
+.search_input .input_box input[type=text] {
+  padding: 5px;
+  border: solid 1px #dcdcdc;
+  transition: box-shadow 0.3s, border 0.3s;
+  width: 300px;
+}
+.search_input .input_box input[type=text]:focus,
+.search_input .input_box input[type=text].focus {
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 1px #969696;
+}
+
+.search_input .input_box input[type=submit] {
+	padding: 5px;
+	border: solid 1px #dcdcdc;
+	margin-left: 10px;
+    background-color: #474747;
+    color: white;
+    font-size: 14px;
+    width: 130px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.search_input .input_box input[type=submit]:hover {
+	color: #6fd8d4;
+}
+
+.search_input .searching_hint {
+	font-size: 12px;
+	
+}
+.searching_word {
+	text-transform: uppercase;
+}
+.searching_result_count {
+	text-transform: uppercase;
+	margin-top: 5px;
+	padding-bottom: 5px;
+}
+
+
+.searching_result{
+	position: relative;
+	top:20px;
+	padding: 10px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'PixelMix';
+}
+
+.searching_result .searching_result_count {
+	border-bottom: 1px solid #cdcdcd;
+}
+
+.found_item{
+	overflow:hidden;
+	width: 90%;
+	position:relative;
+    margin-left: auto;
+	margin-right: auto;
+	
+
+}
+.found_item:not(:first-child){
+	margin-top: 30px;
+}
+
+.found_item:first-child{
+	margin-top: 10px;
+}
+
+.found_item .found_title {
+	font-size: 20px;
+	font-weight: bold;
+	width: 100%;
+	border-bottom: 1px solid #9A9A9A;
+	text-transform: uppercase;
+	color: #1e1e1e;
+	padding-bottom: 5px;
+}
+
+.found_item .found_title a{
+	text-decoration: none;
+	color: #1e1e1e;
+}
+
+
+.found_item .found_content {
+	position: relative;
+	top: 10px;
+	overflow: auto;
+}
+
+.found_img {
+	float: left;
+	width: 20%;
+	text-align: center;
+}
+
+.found_img img {
+	width: 80px;
+}
+.found_item .found_content .found_txt{
+	width:65%;
+	float:left;
+	font-size: 14px;
+	color: #676767;
+	text-align: justify;
+    padding-left: 45px;
+	
+}
+
+.found_info {
+	top: 15px;
+	width: 100%;
+	font-size: 13px;
+	position: relative;
+	font-style: italic;
+	color: #AAA;
+	height: 30px;
+}
+
+.found_info div {
+	margin-left: 10px;
+	float: left;
+}
+
+ .search-found {
+	     text-decoration: underline;
+	 }
+	 
+.highlight {
+	background-color: #6fd8d4;
+}

@@ -1,0 +1,187 @@
+@CHARSET "UTF-8";
+
+.MENU_MAIN_BAR{
+	position: relative;	
+	height:40px;
+	margin-bottom: 0px;
+}
+
+.MENU_MAIN_CATEGORY_0{
+	position: relative;
+	color:white;
+	float:left;
+	font-size: 12px;
+	width: 48%;
+	text-align: center;
+	font-weight: bold;
+	background-color: #002200;
+	border: 1px solid black;
+	border-bottom: 0px;
+	cursor: pointer;
+	transition-duration: 500ms;
+	height: 90%;
+	
+}
+
+.MENU_MAIN_CATEGORY_0.active{
+	height:100%;
+	
+}
+
+.MENU_MAIN_CATEGORY_0:HOVER{
+	color:white;
+	background-color: #004400;
+}
+
+.MENU_SUBCATEGORIES{
+	color:#AAA;
+	
+	background-color: #112211;
+	width:100%;
+	top: 0px;
+	min-height: 500px;
+	padding: 2px 0px;
+	position: relative;
+}
+
+
+.MENU_ADD_SUBCATEGORY_DIALOG{
+	display:none;
+	position: fixed;
+	background: white;
+	min-width: 35%;
+	min-height: 150px;
+	z-index: 100;
+	left:35%;
+	top: 20%;
+	padding: 10px;
+	border: 5px solid black;
+	font-size:20px;
+}
+
+.MENU_ADD_SUBCATEGORY_DIALOG .HEADER{
+	text-align: center;
+
+	}
+.MENU_ADD_SUBCATEGORY_DIALOG .INPUT_BOX{
+	margin-top: 15px;
+	height: 70px;
+
+	}
+	
+.MENU_ADD_SUBCATEGORY_DIALOG .BTN_BOX{
+	height: 40px;
+	text-align: center;
+
+	}
+
+.MENU_ADD_SUBCATEGORY_DIALOG input[type=text]{
+	background: black;
+	border-style: outset;
+	font-size: 30px;
+	width: 100%;
+	color: white;
+
+}
+
+.MENU_ADD_SUBCATEGORY_DIALOG input[type=button]{
+	background: black;
+	border-style: outset;
+	font-size: 30px;
+	color: white;
+	
+
+}
+
+.sub_content{
+	display: none;	
+}
+
+
+/* Holy new */
+
+
+.MenuSwitchItem{
+	width: 100%;
+	float:left;
+	margin-top: 5px;
+	position: relative;
+}
+
+.MenuSwitchItem.optional{
+	display:none;
+}
+.MenuSwitchTitle{
+	float: left;
+    font-size: 14px;
+    margin-left: 5px;
+    width: 200px;
+}
+
+.MenuSwitchValue{
+	float: left;
+	
+}
+
+.MenuSwitchItem select {
+	margin-left: 10px;
+	width: 130px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 2px;
+	background-color: #002200;
+	color: #EEE;
+	border-style: outset;
+}
+
+.MenuSwitchCategorySel{
+	disabled: disabled;
+	
+}
+
+.MenuSwitchbtn_blck{
+	float: left;
+    left: 10%;
+    position: relative;
+    text-align: center;
+    top: 20px;
+    width: 80%;
+}
+
+.MenuSwitchItem .loading_img{
+	display: none;
+	width: 25px;
+	vertical-align: middle;
+}
+
+.menu_big_button{
+	background-color: #002200;
+    height: 40px;
+    position: relative;
+    margin-top:10px;
+    text-align: center;
+    width: 100%;
+	display: table; 
+	cursor: pointer;
+	transition-duration: 300ms;
+}
+
+
+.menu_big_button:hover{
+	background-color: #225522;
+	}
+
+.menu_big_button div{
+	display: table-cell; 
+	vertical-align: middle;
+	width:100%;
+	font-weight: bold;
+	text-transform: uppercase;
+	}
+
+.no_style{
+	color: inherit;
+	text-decoration: none;
+	border:0px;
+	outline:0;
+}
