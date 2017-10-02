@@ -1,0 +1,196 @@
+@CHARSET "UTF-8";
+
+.SettingTab {
+	float:left;
+	min-width:130px;
+	padding: 5px 10px 5px 10px;
+	background-color: #c7c7c7;
+	cursor:pointer;
+	transition-duration:200ms;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	height: 100%;
+	border-right: 1px solid #888;
+	font-family: 'PixelMix';
+}
+
+.SettingTab div {
+	position: relative;
+	height:50%;
+	transition-duration:200ms;
+}
+
+.SettingTab:not(.active):HOVER {
+	background-color: #F5F5F5;
+
+}
+
+.SettProp.txtarea{
+	border-bottom: 0px;
+}
+
+.SettProp .prop_tip{
+	font-size: 9px;
+}
+
+.txtarea .prop_name{
+	border-bottom: 1px dotted black;
+	width:100% !important;
+}
+
+.save_sett {
+	cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 20px;
+	transition-duration: 200ms;	
+}
+
+.save_sett:hover {
+	width:22px;
+}
+
+
+.SettProp.txtarea textarea{
+	width: 100%;
+	height:50px;
+}
+
+.cke_button__savebtn_label{display:inline !important;}
+
+
+.SettingTab.active {
+	background-color: #E6E6E6;
+}
+
+.setting_tabs_container_box{
+	padding-top: 5px;
+	position: relative;
+	float: left;
+	width: 100%;
+	border: 1px solid #cacaca;
+	overflow: auto;
+	padding-bottom: 30px;
+	background-color: white;
+}
+
+
+.setting_tabs_container{
+	displat:none;
+	padding-top: 5px;
+	background-color: #e6e6e6;
+	min-height:350px;
+	position: relative;
+	float: left;
+	width:90%;
+	border: 1px solid black;
+}
+
+.setting_tabs_container input {
+	font-size: 18px;
+	width: 300px;
+}
+
+.setting_tab_container{
+	display:none;
+
+	
+}
+
+.settings_edit_box{
+	position: absolute;
+	width: 100%;
+	z-index:450;
+	min-height: 500px;
+}
+
+
+.center{
+	text-align: center;
+}
+
+
+
+.load_setting_data{
+	width: 40px;
+	position: absolute;
+	right: 10px;
+	display:none;
+	
+}
+
+.SettProp {
+	position: relative;
+	width:40%;
+	float: left;
+	margin-left:20px;
+	font-size: 14px;
+	border-bottom: 1px dotted #876;
+	margin-top: 10px;
+}
+
+.SettProp .prop_name {
+	width:50%;
+	float: left;
+}
+
+.SettProp .prop_value {
+	width: 40%;
+	float: left;
+	text-align: right;
+}
+
+div.SettProp [editable='1'] {
+	cursor: pointer;
+}
+
+.SettProp > .edit_sett{
+	cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 20px;
+}
+
+.edit_sett_data_input{
+	border: medium dotted;
+    bottom: 0;
+    font-size: 12px !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 23px;
+    width: 150px !important;
+    text-align: right;
+}
+
+.settings_set_fieldset  {
+	float: none;
+	position: relative;
+    top: 10px;
+    min-height: 30px;
+    width: 73%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+}
+.settings_set_fieldset legend {
+	font-family: 'PixelMix';
+	width: 100%;
+	height: 30px;
+	background: #f8f8f8;
+	border-bottom: 1px solid #cacaca;
+	padding-top: 8px;
+	padding-left: 10px;
+	font-weight: bold;
+}
+
+.tooltip{
+	position: absolute;
+	transition-duration: 200ms;
+	background-color: #ababab;
+	top:0px;
+}
+
+
+

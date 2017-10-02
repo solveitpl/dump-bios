@@ -1,0 +1,295 @@
+@CHARSET "UTF-8";
+@CHARSET "UTF-8";
+.MailEditorDiv{
+	position: relative;
+	width: 50%;
+	float: left;
+}
+
+.MailEditorTools{
+	float: left;
+	border: solid black 1px;
+	margin: 2px;
+	width:15%;
+	padding: 2px;
+	
+}
+
+.SavedMailList{
+	float: left;
+	border: solid black 1px;
+	margin: 2px;
+	width: 28%;	
+	padding: 2px;
+	text-align: center;
+}
+#send_test_newsletter {
+	background: #474747;
+	color: #e9e9e9;
+	border: none;
+	cursor: pointer;
+	padding: 4px;
+	text-transform: uppercase;
+
+}
+#send_test_newsletter:hover {
+	color: #6fd8d4;
+}
+#send_newsletters {
+	background: #474747;
+	color: #e9e9e9;
+	border: none;
+	cursor: pointer;
+	padding: 4px;
+	text-transform: uppercase;
+}
+#send_newsletters:hover {
+	color: #6fd8d4;
+}
+
+
+
+.SavedMailList img {
+	width:50%;
+}
+
+fieldset{
+	border: 1px solid black;
+	text-align: center;
+	padding: 3px;
+}
+
+.info_title{
+	text-align: left;
+	width: 49%;
+	float:left;
+}
+
+.prg_bar{
+	position: relative;
+	width: 90%;
+	left: 5%;
+	border: 1px solid black;
+	height: 30px;
+}
+
+.prg_bar_pattern{
+	margin:0px;
+	width:0%;
+	height: 100%;
+	background-color: #5588CD;
+	transition-duration: 200ms;
+	position: absolute;
+}
+
+.meb_table td{
+	vertical-align: middle;
+	text-align: center;
+	padding: 0px;
+	text-overflow: clip;
+	font-size: 12px;
+}
+
+.meb_btn_td {
+	width: 20%;
+}
+
+.meb_btn_td img{
+	width: 20px;
+	margin:4px;
+}
+
+.meb_info_block{
+	border-bottom: 1px dashed;
+    overflow: auto;
+    position: relative;
+    width: 96%;
+    margin-left: 2px;
+    margin-bottom: 10px;	
+}
+
+.info_value{
+	text-align: right;
+	width: 49%;
+	float:left;
+}
+
+.ToDoTab {
+	float: left;
+	min-width: 130px;
+	padding: 5px 10px 5px 10px;
+	background-color: #c7c7c7;
+	cursor: pointer;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	height: 100%;
+	border-right: 1px solid #888;
+	font-family: 'PixelMix';
+}
+
+.ToDoTab div {
+	position: relative;
+	height:50%;
+}
+
+.ToDoTab:not(.active):HOVER {
+	background-color: #F5F5F5;
+
+}
+
+.SettProp.txtarea{
+	border-bottom: 0px;
+}
+
+.SettProp .prop_tip{
+	font-size: 9px;
+}
+
+.txtarea .prop_name{
+	border-bottom: 1px dotted black;
+	width:100% !important;
+}
+
+.save_sett {
+	cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 20px;
+	transition-duration: 200ms;	
+}
+
+.save_sett:hover {
+	width:22px;
+}
+
+
+.SettProp.txtarea textarea{
+	width: 100%;
+	height:50px;
+}
+
+.cke_button__savebtn_label{display:inline !important;}
+
+
+.ToDoTab.active {
+	background-color: #E6E6E6;
+}
+
+.ToDo_tabs_container_box{
+	padding-top: 5px;
+	position: relative;
+	float: left;
+	width: 90%;
+	border: 1px solid black;
+	overflow: auto;
+	padding-bottom: 30px;
+}
+
+.ToDo_tabs_container{
+	display:none;
+	padding-top: 5px;
+	background-color: #e6e6e6;
+	min-height:350px;
+	position: relative;
+	float: left;
+	width:90%;
+	border: 1px solid black;
+
+}
+
+.ToDo_tabs_container input {
+	font-size: 18px;
+	width: 300px;
+}
+
+.ToDo_tab_container{
+	display:none;
+
+	
+}
+
+.ToDos_edit_box{
+	position: absolute;
+	width: 100%;
+	background-color: #e6e6e6;
+	z-index:450;
+	min-height: 500px;
+}
+
+
+.center{
+	text-align: center;
+}
+
+
+
+.load_ToDo_data{
+	width: 40px;
+	position: absolute;
+	right: 10px;
+	display:none;
+	
+}
+
+.SettProp {
+	position: relative;
+	width:40%;
+	float: left;
+	margin-left:20px;
+	font-size: 14px;
+	border-bottom: 1px dotted #876;
+	margin-top: 10px;
+}
+
+.SettProp .prop_name {
+	width:50%;
+	float: left;
+}
+
+.SettProp .prop_value {
+	width: 40%;
+	float: left;
+	text-align: right;
+}
+
+div.SettProp [editable='1'] {
+	cursor: pointer;
+}
+
+.SettProp > .edit_sett{
+	cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 20px;
+}
+
+.edit_sett_data_input{
+	border: medium dotted;
+    bottom: 0;
+    font-size: 12px !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 23px;
+    width: 150px !important;
+    text-align: right;
+}
+
+.ToDos_set_fieldset  {
+	float: none;
+	position: relative;
+    top: 10px;
+    min-height: 30px;
+    width:95%;
+}
+
+.tooltip{
+	position: absolute;
+	transition-duration: 200ms;
+	background-color: #ababab;
+	top:0px;
+}
+
+
+

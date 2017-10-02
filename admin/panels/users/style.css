@@ -1,0 +1,515 @@
+@CHARSET "UTF-8";
+
+.user_list{
+	position: absolute;
+	width: 100%;
+}
+
+.user_list input{
+	font-size: 14px;
+	width:120px;
+	
+}
+.user_list strong {
+	font-weight: bold; 
+}
+
+.user_list em {
+	font-style: italic; 
+}
+
+.user_list  table {
+	background: white;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 10px;
+	line-height: 13px;
+	margin: 30px auto;
+	text-align: left;
+	width: 95%;
+}	
+
+.user_list th {
+	background: linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;
+	text-transform: uppercase;
+	font-family: 'PixelMix';
+}
+#search_user .search_row select {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+
+.user_list th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	
+}
+
+.user_list th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+.user_list th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+.user_list td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+}
+
+.user_list td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+.user_list td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+.user_list tr {
+	cursor: pointer;
+}
+
+.user_list tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+.user_list tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+.user_list tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}
+
+.user_list tbody:hover tr:hover td {
+	background: #f9f9f9;
+}
+
+.smooth th{
+	padding:2px;
+	cursor: default;
+}
+
+.user_edit_box{
+	display:none;
+	position: absolute;
+	width: 100%;
+	background-color: #e6e6e6;
+	z-index:450;
+	min-height: 500px;
+}
+
+.user_edit_avatar{
+	 float: left;
+    min-height: 250px;
+    position: relative;
+    text-align: center;
+    width: 15%;
+}
+
+.user_edit_avatar img {
+     margin: 50px auto auto;
+    position: relative;
+    top: 25%;
+    width: 100px;
+}
+
+.user_edit_info{
+	float:left;
+	width:100%;
+	min-height:250px;
+	padding-bottom: 25px;
+}	
+
+.properties3 {
+	position: relative;
+	width:40%;
+	float: left;
+	margin-left:20px;
+	font-size: 14px;
+	border-bottom: 1px dotted #876;
+	margin-top: 10px;
+}
+
+.properties3 .prop_name3 {
+	width:50%;
+	float: left;
+}
+
+.properties3 .prop_value3 {
+	width: 40%;
+	float: left;
+	text-align: right;
+}
+
+.user_edit_info fieldset {
+	position: relative;
+    top: 10px;
+    min-height: 30px;
+    width:95%;
+}
+
+
+
+.radio_class form {
+	margin: 40px 0;
+}
+
+.radio_class {
+	float: left;
+    min-width: 200px;
+}
+
+.radio_class label {
+  width: 180px;
+  border-radius: 3px;
+  border: 1px solid #D1D3D4
+}
+
+/* hide input */
+input.radio:empty {
+	margin-left: -999px;
+	display:none;
+}
+
+/* style label */
+input.radio:empty ~ label {
+	position: relative;
+	float: left;
+	line-height: 2.5em;
+	text-indent: 3.25em;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+input.radio:empty ~ label:before {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	content: '';
+	width: 2.5em;
+	background: #D1D3D4;
+	border-radius: 3px 0 0 3px;
+}
+
+/* toggle hover */
+input.radio:hover:not(:checked) ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #C2C2C2;
+}
+
+input.radio:hover:not(:checked) ~ label {
+	color: #888;
+}
+
+/* toggle on */
+input.radio:checked ~ label:before {
+	content:'\2714';
+	text-indent: .9em;
+	color: #9CE2AE;
+	background-color: #4DCB6D;
+}
+
+input.radio:checked ~ label {
+	color: #777;
+}
+
+/* radio focus */
+input.radio:focus ~ label:before {
+	box-shadow: 0 0 0 3px #999;
+}
+
+
+.DetailTab {
+	float:left;
+	min-width:130px;
+	padding: 0px 10px 0px 10px;
+	background-color: #c7c7c7;
+	cursor:pointer;
+	margin-top:2px;
+	transition-duration:200ms;
+	text-align: center;
+	font-size: 20px;
+	font-weight: bold;
+	height: 100%;
+	border-right: 1px solid #FFF;
+	border-bottom: 1px solid #FFF;
+	
+}
+
+.DetailTab div {
+	position: relative;
+	height:50%;
+	top:25%;
+	transition-duration:200ms;
+}
+
+.DetailTab:not(.active):HOVER {
+	background-color: #F5F5F5;
+	border-bottom: 1px solid #000;
+}
+
+
+
+
+.DetailTab.active {
+	background-color: #E6E6E6;
+}
+
+
+
+.detail_tabs_container{
+	padding-top: 5px;
+	background-color: #e6e6e6;
+	min-height:350px;
+	position: relative;
+	float: left;
+	width:80%;
+	border: 1px solid black;
+}
+
+.detail_tabs_container input {
+	font-size: 18px;
+	width: 300px;
+}
+
+.detail_tab_container{
+	display:none;
+
+	
+}
+
+
+
+.detail_tab_container table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 10px;
+	line-height: 13px;
+	margin: 30px auto;
+	text-align: left;
+	width: 95%;
+}	
+
+.detail_tab_container th {
+	background: linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+.detail_tab_container th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+.detail_tab_container th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+.detail_tab_container th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+.detail_tab_container td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+.detail_tab_container td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+.detail_tab_container td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+.detail_tab_container tr {	
+	cursor: pointer;
+}
+
+.detail_tab_container tr:nth-child(odd) td {
+	background: #f1f1f1;	
+}
+
+.detail_tab_container tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+.detail_tab_container tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+.detail_tab_container tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+.detail_tab_container tbody:hover td {
+	color: transparent;
+	text-shadow: 0.5px 0.5px 0.5px #777;
+}
+
+.detail_tab_container tbody:hover tr:hover td {
+	color: #444;
+	background: #fff;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.smooth th{
+	padding:2px;
+	cursor: default;
+}
+
+.action_btn{
+	text-align: center;
+	padding: 0px !important;
+}
+
+.action_btn input{
+	cursor: pointer;
+	border: 1px solid white;
+	width: 100px;
+	background-color: black;
+	color: white;
+	font-size: 14px;
+	font-weight: bold;
+	transition-duration: 200ms;
+}
+
+.action_btn input:hover{
+	background-color: white;
+	color: black;
+	border: 1px solid black;
+	
+}
+
+.center{
+	text-align: center;
+}
+
+.properties2{
+	float: left;
+    padding: 5px;
+    width: 120px;
+    border-right: 1px dashed black;
+}
+
+.prop_name2{
+	font-size: 12px;
+}
+
+.prop_value2{
+	font-size: 32px;
+    font-weight: bold;
+    margin-right: 29px;
+    text-align: right;
+}
+
+.GivePoints {
+	float: right;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.GivePoints input[type=text] {
+	width: 50px;
+	text-align: center;
+	font-weight: bold;
+}
+
+
+.GivePoints input[type=button]{
+	width: 100px;
+	background-color: black;
+	color: white;
+}
+
+div [editable='1'] {
+	cursor: pointer;
+	 
+}
+
+.edit_this{
+	cursor: pointer;
+    position: absolute;
+    right: 0;
+    width: 20px;
+}
+
+.edit_user_data_input{
+	border: medium dotted;
+    bottom: 0;
+    font-size: 12px !important;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: 23px;
+    width: 150px !important;
+    text-align: right;
+}
+
+.load_user_data{
+	width: 40px;
+	position: absolute;
+	right: 10px;
+	display:none;
+	
+}
+
+.search[type2nd=date]{
+	width:40%;
+}
+
+
+

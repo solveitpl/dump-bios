@@ -1,0 +1,196 @@
+@CHARSET "UTF-8";
+
+
+.RepoTab {
+	float:left;
+	min-width:130px;
+	padding: 5px 10px 5px 10px;
+	background-color: #c7c7c7;
+	cursor:pointer;
+	transition-duration:200ms;
+	text-align: center;
+	font-weight: bold;
+	height: 100%;
+	border-right: 1px solid #888;
+	font-family: 'PixelMix';
+	font-size: 17px;
+}
+
+.RepoTab div {
+	position: relative;
+	height:50%;
+	transition-duration:200ms;
+}
+
+.RepoTab:not(.active):HOVER {
+	background-color: #F5F5F5;
+
+}
+
+.load_Repo_data{
+	width: 40px;
+	position: absolute;
+	right: 10px;
+	display:none;
+	
+}
+
+.RepoTab.active {
+	background-color: #E6E6E6;
+}
+
+.Repo_tabs_container_box{
+	padding-top: 5px;
+	position: relative;
+	float: left;
+	width: 90%;
+	border: 1px solid #cacaca;
+	padding-bottom: 30px;
+	background-color: white;
+}
+
+
+.Repo_tab_container{
+	display:none;
+	padding-top: 5px;
+
+	min-height:350px;
+	position: relative;
+	float: left;
+	width:90%;
+	font-family: 'PixelMix';
+	
+}
+
+#msg_loading_bar{
+	display: none;
+	width: 20px;
+	position: absolute;
+	right:40px;
+	top: 0px;
+}
+
+#msg_loading_bar img{
+	width:40px;
+	}
+
+
+.Repo_tab_container{
+	position: relative;
+	min-height: 400px;
+	width: 100%;
+}
+
+.Repo_tab_container input{
+	font-size: 14px;
+	width:120px;
+	
+}
+.Repo_tab_container strong {
+	font-weight: bold; 
+}
+
+.Repo_tab_container em {
+	font-style: italic; 
+}
+
+.Repo_tab_container  table {
+	background: #f5f5f5;
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 10px !important;
+	line-height: 13px;
+	margin: 5px auto;
+	text-align: left;
+	width: 95%;
+}	
+
+.Repo_tab_container th {
+	background: linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+.Repo_tab_container th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+.Repo_tab_container th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+.Repo_tab_container th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+.Repo_tab_container td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+	transition: all 300ms;
+}
+
+.Repo_tab_container td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+.Repo_tab_container td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+.Repo_tab_container tr {
+	cursor: pointer;
+}
+
+.Repo_tab_container tr:nth-child(odd) td {
+	background: #f1f1f1;
+}
+
+.Repo_tab_container tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+.Repo_tab_container tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+.Repo_tab_container tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}	
+
+.Repo_tab_container tbody:hover td {
+	color: transparent;
+	text-shadow: 0.5px 0.5px 0.5px #777;
+}
+
+.Repo_tab_container tbody:hover tr:hover td {
+	color: #444;
+	background: #fff;
+	text-shadow: 0 1px 0 #fff;
+}
+
+.smooth th{
+	padding:2px;
+	cursor: default;
+}

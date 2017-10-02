@@ -1,0 +1,243 @@
+@CHARSET "UTF-8";
+
+
+.LogsTab {
+	float:left;
+	min-width:130px;
+	padding: 5px 10px 5px 10px;
+	background-color: #c7c7c7;
+	cursor:pointer;
+	text-align: center;
+	font-size: 17px;
+	font-weight: bold;
+	height: 100%;
+	border-right: 1px solid #888;
+	font-family: 'PixelMix';
+	text-transform: uppercase;
+}
+
+.LogsTab div {
+	position: relative;
+	height:50%;
+}
+
+.LogsTab:not(.active):HOVER {
+	background-color: #F5F5F5;
+
+}
+
+
+
+.load_Logs_data{
+	width: 40px;
+	position: absolute;
+	right: 10px;
+	display:none;
+	
+}
+
+.LogsTab.active {
+	background-color: #E6E6E6;
+}
+
+.Logs_tabs_container_box{
+	padding-top: 5px;
+	position: relative;
+	float: left;
+	width: 100%;
+	border: 1px solid #cacaca;
+	padding-bottom: 30px;
+}
+#delAllLogs {
+	background-color: #474747;
+	color: #e9e9e9;
+	padding: 5px 10px;
+	border: none;
+	margin-left: 3%;
+	cursor: pointer;
+}
+#delAllLogs:hover {
+	color: #6fd8d4;
+}
+#delAllPHPLogs {
+	background-color: #474747;
+	color: #e9e9e9;
+	padding: 5px 10px;
+	border: none;
+	margin-left: 3%;
+	cursor: pointer;
+}
+#delAllPHPLogs:hover {
+	color: #6fd8d4;
+}
+
+
+
+
+#delAllAlerts {
+	background-color: #474747;
+	color: #e9e9e9;
+	padding: 5px 10px;
+	border: none;
+	margin-left: 3%;
+	cursor: pointer;
+}
+#delAllAlerts:hover {
+	color: #6fd8d4;
+}
+
+.Logs_tab_container{
+	display:none;
+	padding-top: 5px;
+	position: relative;
+	float: left;
+	width:90%;
+	
+}
+
+#msg_loading_bar{
+	display: none;
+	width: 20px;
+	position: absolute;
+	right:40px;
+	top: 0px;
+}
+
+#msg_loading_bar img{
+	width:40px;
+	}
+
+
+.Logs_tab_container{
+	position: relative;
+	width: 100%;
+}
+
+.Logs_tab_container input{
+	font-size: 14px;
+	width:120px;
+	
+}
+.Logs_tab_container strong {
+	font-weight: bold; 
+}
+
+.Logs_tab_container em {
+	font-style: italic; 
+}
+
+.Logs_tab_container  table {
+	border-collapse: separate;
+	box-shadow: inset 0 1px 0 #fff;
+	font-size: 10px !important;
+	line-height: 13px;
+	margin: 5px auto;
+	text-align: left;
+	width: 95%;
+}
+.Logs_tab_container tr {
+	font-family: 'PixelMix';
+	text-transform: uppercase;
+}
+.Logs_tab_container tr td:nth-child(4) {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	max-width: 400px;
+}
+
+.Logs_tab_container th {
+	background: linear-gradient(#777, #444);
+	border-left: 1px solid #555;
+	border-right: 1px solid #777;
+	border-top: 1px solid #555;
+	border-bottom: 1px solid #333;
+	box-shadow: inset 0 1px 0 #999;
+	color: #fff;
+  font-weight: bold;
+	padding: 10px 15px;
+	position: relative;
+	text-shadow: 0 1px 0 #000;	
+}
+
+.Logs_tab_container th:after {
+	background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,.08));
+	content: '';
+	display: block;
+	height: 25%;
+	left: 0;
+	margin: 1px 0 0 0;
+	position: absolute;
+	top: 25%;
+	width: 100%;
+}
+
+.Logs_tab_container th:first-child {
+	border-left: 1px solid #777;	
+	box-shadow: inset 1px 1px 0 #999;
+}
+
+.Logs_tab_container th:last-child {
+	box-shadow: inset -1px 1px 0 #999;
+}
+
+.Logs_tab_container td {
+	border-right: 1px solid #fff;
+	border-left: 1px solid #e8e8e8;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #e8e8e8;
+	padding: 10px 15px;
+	position: relative;
+}
+
+.Logs_tab_container td:first-child {
+	box-shadow: inset 1px 0 0 #fff;
+}	
+
+.Logs_tab_container td:last-child {
+	border-right: 1px solid #e8e8e8;
+	box-shadow: inset -1px 0 0 #fff;
+}	
+
+.Logs_tab_container tr {
+	cursor: pointer;
+}
+
+
+.Logs_tab_container tr:last-of-type td {
+	box-shadow: inset 0 -1px 0 #fff; 
+}
+
+.Logs_tab_container tr:last-of-type td:first-child {
+	box-shadow: inset 1px -1px 0 #fff;
+}	
+
+.Logs_tab_container tr:last-of-type td:last-child {
+	box-shadow: inset -1px -1px 0 #fff;
+}
+.Logs_tab_container tbody {
+	background-color: white;
+}
+
+.Logs_tab_container tbody:hover tr:hover td {
+	color: #444;
+	background: #f9f9f9;
+}
+
+.smooth th{
+	padding:2px;
+	cursor: default;
+}
+
+.logs_btn_show_data{
+	background-color: #474747;
+	color: #e9e9e9;
+	padding: 5px 10px;
+	border: none;
+	margin-left: 3%;
+	cursor: pointer;
+
+}
+.logs_btn_show_data:hover {
+	color: #6fd8d4;
+}
