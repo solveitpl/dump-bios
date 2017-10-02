@@ -1,0 +1,162 @@
+.login_background {
+    display: none;
+    background: #000;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 555;
+    opacity: 0.25;
+}
+
+.login_box {
+    display: none;
+    width: 30%;
+    height: 350px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999;
+    top: 20px;
+    left: 35%;
+    border: 1px solid black;
+    margin-bottom: 20px;
+}
+
+.login_form {
+    display: none;
+    position: relative;
+    text-transform: uppercase;
+    z-index: 500;
+}
+
+.login_header {
+    padding: 6px;
+    position: relative;
+
+    background: #000;
+    height: 40px;
+    font-size: 26px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+}
+
+.login_input_box {
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    top: 35px;
+
+}
+
+.login_form input {
+    background: #000;
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    margin-top: 5px;
+    text-transform: uppercase;
+}
+
+.close_btn {
+    top: 40%;
+    float: right;
+    cursor: pointer;
+    transition-duration: 500ms;
+    border: 1px solid white;
+    padding: 1px;
+    top: 20px;
+}
+
+.close_btn:hover {
+    font-size: 30px;
+}
+
+.restore_password_link {
+    margin-top: 20px;
+    text-transform: none;
+    text-decoration: none;
+    color: #BBB;
+    transition-duration: 300ms;
+    cursor: pointer;
+}
+
+.restore_password_link:hover {
+    color: #999;
+}
+
+.login_password_restore {
+    display: none;
+    width: 30%;
+    height: 200px;
+    background-color: #fff;
+    position: absolute;
+    z-index: 999;
+    top: 20px;
+    left: 35%;
+    border: 1px solid black;
+}
+
+.login_password_restore input[type=text] {
+    text-transform: none;
+}
+
+.restore_pass_form {
+    width: 20%;
+    position: absolute;
+    left: 40%;
+    top: 5%;
+}
+
+.restore_pass_form_title {
+    position: relative;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.restore_pass_form_hint {
+    font-style: italic;
+    font-size: 12px;
+}
+
+.restore_pass_form_err {
+    font-style: italic;
+    font-size: 12px;
+    color: red;
+    font-weight: bold;
+
+}
+
+.restore_pass_form input {
+    font-size: 18px;
+    margin-top: 0px;
+    width: 100%;
+
+}
+
+.restore_pass_btn {
+    width: 100%;
+    text-align: center;
+}
+
+.restore_pass_btn input[type=submit] {
+    margin-left: 10px;
+    margin-top: 20px;
+    border: 1px solid white;
+    width: 160px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    transition-duration: 1s;
+}
+
+#login_loading {
+    display: none;
+}
+
+.login_button {
+    padding: 3px 3px 3px 3px;
+    top: 20px;
+}
