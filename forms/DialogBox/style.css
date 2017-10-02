@@ -1,0 +1,108 @@
+@CHARSET "UTF-8";
+
+.dialog_box_container{
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 500;
+}
+
+.dialog_box_background{
+	position:absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.2;
+}
+
+#CloseDialogBoxWithDismiss{
+	display: none;
+}
+
+.dialog_box_main{
+	position: absolute;
+	width: 408px;
+	height: 334px;
+	top: 50%;
+	left: 50%;
+	margin-top: -217px; /* Negative half of height. */
+	margin-left: -204px; /* Negative half of width. */
+	background-color: white;
+	z-index: 900;
+	border: 1px solid #cacaca;
+}
+
+.dialog_box_header{
+	position: relative;
+	height: 40px;
+	content: "DUMP BIOS";
+	font-weight: bold;	
+	border-bottom: 1px solid #cacaca;
+	padding-left: 5px;
+	font-family: 'PixelMix';
+	font-size: 18px;
+	text-transform: uppercase;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+.dialog_box_content{
+	padding: 10px;
+}
+
+.dialog_box_img{
+	position: relative;
+	float: none;
+	margin: 0 auto;
+	text-align: center;
+	width: 30%;
+	overflow: hidden;
+}
+
+.dialog_box_img img{
+	height: 100px; 
+    padding-top: 1%;
+   
+	
+}
+
+.dialog_box_text{
+	color: #555753;
+	font-family: 'PixelMix';
+	float: left;
+	line-height: 22px;
+	width: 60%;
+	text-align: center;
+	margin-left: 20%;
+	margin-top: 5%;
+	
+}
+
+.dialog_box_btn{
+
+    bottom: 12px;
+	right: 0;
+    height: 30px;
+    position: absolute;
+    width: 275px;
+    margin-right: 10px;
+	text-align: right;
+
+}
+
+.dialog_box_container input[type=button]{
+	border: 1px solid #1e1e1e;
+	width: 130px;
+	background-color: #1e1e1e;
+	color: white;
+	font-size: 16px;
+	font-weight: bold;
+	height: 30px;
+	padding: 0;
+	cursor: pointer
+}
+.dialog_box_container input[type=button]:hover {
+	color: #6fd8d4;
+}

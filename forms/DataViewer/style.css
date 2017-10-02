@@ -1,0 +1,124 @@
+@CHARSET "UTF-8";
+
+.o_DataViewer_layer{
+	position: absolute;
+	display:none;
+	left: 0px;
+	top: 0px;
+	z-index:400;
+}
+
+.odlWrapper{
+	background-color: black;
+	opacity: 0.3;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top:0px;
+	left:0px;
+}
+
+.odlDataView{
+	position: fixed;
+	background-color: white;
+	width: 70%;
+	height: 80%;
+	left: 15%;
+	top: 10%;
+}
+
+.odlHeader{
+	border-bottom: 1px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 10%;
+    padding: 10px;
+}
+
+.odlBody{
+	height: 80%;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.odlFotter{
+	border-top: 1px dashed;
+    bottom: 0;
+    height: 10%;
+    padding-bottom: 20px;
+    padding-right: 5px;
+    padding-top: 10px;
+    position: absolute;
+    text-align: right;
+    width: 100%;
+}
+
+
+.odlDataList { list-style-type: none; }
+
+.odlDataList label.l_normal {
+	background-color: #AAAFAB;
+	border-radius: 5px;
+	padding: 3px;
+	color: white;	
+	margin-right: 30px;
+}
+
+.odlDataList label.l_extended{
+	background-color: #AAAFAB;
+	border-radius: 5px;
+	padding: 3px;
+	padding-left: 25px;
+	color: white;	
+	margin-right: 30px;
+}
+
+
+.odlDataList li { 
+	margin: 10px;
+	padding: 5px;
+	border: 1px solid #ABC;
+	border-radius: 5px;
+}
+.odlDataList input[type=checkbox] { display: none; }
+.odlDataList input[type=checkbox] ~ ul { 
+	max-height: 0;
+	max-width: 0;
+	opacity: 0;
+	overflow: hidden;
+	white-space:nowrap;
+   -webkit-transition:all 1s ease;  
+   -moz-transition:all 1s ease;  
+   -o-transition:all 1s ease;  
+   transition:all 1s ease;  
+	
+}
+.odlDataList input[type=checkbox]:checked ~ ul { 
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+}
+.odlDataList input[type=checkbox] + label:before{
+	transform-origin:25% 50%;
+  border: 8px solid transparent;
+  border-width: 8px 12px;	
+  border-left-color: white;
+  margin-left: -20px;
+	width: 0;
+	height: 0;
+	display: inline-block;
+	text-align: center;
+	content: '';
+	color: #AAAFAB;
+   -webkit-transition:all .5s ease;  
+   -moz-transition:all .5s ease;  
+   -o-transition:all .5s ease;  
+   transition:all .5s ease; 
+	position: absolute;
+	margin-top: 1px;
+}
+.odlDataList input[type=checkbox]:checked + label:before {
+	transform: rotate(90deg);
+	/*margin-top: 6px;
+  margin-left: -25px;*/
+}

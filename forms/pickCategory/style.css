@@ -1,0 +1,163 @@
+@CHARSET "UTF-8";
+
+.pickCategoryBox{
+	display:none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 800;
+}
+
+.bckgDarked{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.5;
+	z-index: 850;
+}
+
+.bckgBorder{
+	position: absolute;
+	left: 5%;
+	top: 10%;
+	width: 90%;
+	height: 80%;
+	background: #b4ddb4; /* Old browsers */
+	background: -moz-linear-gradient(top, #b4ddb4 0%, #83c783 17%, #52b152 33%, #008a00 67%, #005700 83%, #002400 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #b4ddb4 0%,#83c783 17%,#52b152 33%,#008a00 67%,#005700 83%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4ddb4', endColorstr='#002400',GradientType=0 ); /* IE6-9 */z-index: 870;
+	padding: 1%;
+}
+
+.bckgContent{
+	position: relative;
+	width: 97%;
+	height: 90%;
+	background: #EEE;
+}
+
+.CatPickBtns{
+	position: relative;
+	width: 90%;
+}
+
+.CatPickBtns[input=button]{
+	
+}
+
+
+.pick_level_title{
+	text-align: center;
+	font-size: 21px;
+	
+}
+
+
+.pick_menu_level{
+	float: left;
+	width: 171px;
+	margin-left: 8px;
+	transition-duration:300ms;
+	height: 100%;
+	overflow:scroll;
+	scroll-y: auto;
+}
+
+.load_img{
+	text-align: center;
+	width:165px;
+}
+
+.pick_menu_level:nth-child(2n){
+	background-color: #aaa;
+}
+
+.pick_menu_level:nth-child(2n+1){
+	background-color: #aaa;
+}
+
+.pick_menu_category{
+	z-index: 300;
+	width: 144px;
+	height: 55px;
+	background: #cdeb8e;
+	background: -moz-linear-gradient(top, #cdeb8e 0%, #a5c956 100%);
+	background: -webkit-linear-gradient(top, #cdeb8e 0%,#a5c956 100%);
+	background: linear-gradient(to bottom, #cdeb8e 0%,#a5c956 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cdeb8e', endColorstr='#a5c956',GradientType=0 );
+	margin-top: 13px;
+	margin-left: 8px;
+	padding: 3px 5px;
+	cursor:pointer;
+	position: relative;
+	
+}
+
+.pick_menu_category:HOVER{
+	background: #adbb5e;
+}
+
+.picked_menu{
+	border: 2px solid black;
+	background: #c5d368;
+	background: -moz-linear-gradient(top, #c5d368 0%, #95b946 100%);
+	background: -webkit-linear-gradient(top, #c5d368 0%,#95b946 100%);
+	background: linear-gradient(to bottom, #c5d368 0%,#95b946 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c5d368', endColorstr='#a5c956',GradientType=0 );
+
+		
+}
+
+.pick_menu_title{
+	font-size: 21px;
+}
+
+.pick_menu_subtitle{
+	font-size: 13px;
+}
+
+.pick_menu_items{
+	min-height: 100px;
+	padding: 0 0 20px;
+	margin: 0px;
+	height:100%;
+}
+
+.pick_menu_items li{
+	list-style: none;
+}
+
+.pick_level_subtitle{
+	background-color: #768828;
+    color: #2312fd;
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2px;
+    position: absolute;
+    right: 5px;
+    top: 2px;
+}
+
+.drag-default{
+	background-color: inherit;
+		
+}
+
+.over{
+	background-color: inherit;
+}
+
+.pick_menu_items[level="-1"] > .pick_menu_category > .level_subtitle {
+	display: block;
+}
+
+.category_in_tmp{
+	opacity: 0.5;
+}
+
+
